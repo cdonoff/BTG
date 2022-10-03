@@ -1,0 +1,49 @@
+
+html,
+body {
+    font-family: 'Quicksand', sans-serif;
+    height: 100%;
+    width: 100%;
+    background: url(beegee.jpg) no-repeat bottom fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3 1fr);
+    gap: 5px;
+    grid-template-areas:
+    "titt"
+    "blurb" 
+    "butter";
+    justify-items: center;
+    align-items: center;
+    
+}
+
+header {
+    grid-area: titt;
+    width: max-content;
+    
+}
+
+h1 {
+    font-size: 1.5em;
+    color: orange;
+}
+
+#intro {
+    grid-area: blurb;
+}
+
+#begin {
+    width: 16vw;
+    height: 11vh;
+    grid-area: butter;
+}
