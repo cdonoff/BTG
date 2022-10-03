@@ -30,16 +30,25 @@ body {
 header {
     grid-area: titt;
     width: max-content;
+    margin-left: 10%;
+    margin-right: 10%;
     
 }
 
 h1 {
     font-size: 1.5em;
     color: rgb(226, 166, 53);
+
 }
 
 #intro {
     grid-area: blurb;
+    color: white;
+}
+p {
+    width: 68vw;
+    justify-self: center;
+    text-align: center;
 }
 
 #begin {
