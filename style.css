@@ -16,12 +16,14 @@ body {
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3 1fr);
+    grid-template-rows: 0.5fr auto auto auto 0.75fr;
     gap: 5px;
     grid-template-areas:
+    "."
     "titt"
     "blurb" 
-    "butter";
+    "butter"
+    ".";
     justify-items: center;
     align-items: center;
     
@@ -32,6 +34,7 @@ header {
     width: max-content;
     margin-left: 10%;
     margin-right: 10%;
+    margin-bottom: 5vw;
     align-items: flex-end;
 }
 
@@ -46,10 +49,11 @@ h1 {
     color: white;
 }
 p {
-    width: 68vw;
+    width: 75vw;
     justify-self: center;
     text-align: center;
     align-items: flex-start;
+    margin-bottom: 9vw;
 }
 
 #begin {
@@ -57,7 +61,9 @@ p {
     height: 5vh;
     grid-area: butter;
     background-color: rgb(31, 168, 31);
+    border: none;
     border-radius: 45px;
     box-shadow: 5px 5px 3px;
     font-family: 'Quicksand', sans-serif;
+    margin-top: 4vw;
 }
