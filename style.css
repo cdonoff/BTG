@@ -32,9 +32,9 @@ body {
 header {
     grid-area: titt;
     width: max-content;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 5vw;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 13vh;
     align-items: flex-end;
 }
 
@@ -47,13 +47,25 @@ h1 {
 #intro {
     grid-area: blurb;
     color: white;
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
 }
+
 p {
-    width: 75vw;
+    width: 68vw;
     justify-self: center;
     text-align: center;
     align-items: flex-start;
-    margin-bottom: 9vw;
+    font-size: 1.5rem;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
 }
 
 #begin {
@@ -65,6 +77,6 @@ p {
     border-radius: 45px;
     box-shadow: 5px 5px 3px black;
     font-family: 'Quicksand', sans-serif;
-    margin-top: 4vw;
+    margin-top: 11vh;
     color: black;
 }
