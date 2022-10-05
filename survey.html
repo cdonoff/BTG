@@ -12,12 +12,34 @@
     <body>
         <div class="container">
             <header>
-                <h1 class="animate__animated animate__fadeInUp"></h1>
+                <h1 class="animate__animated animate__fadeInUp">Survey</h1>
             </header>
-            <div id="intro" class="animate__animated animate__fadeInUp">
-                <p>We are all about providing a framework for connecting experience to novice. Enjoy</p>
+            <div id="survey" class="animate__animated animate__fadeInUp field">
+                <p class="question">I feel confident as a student of architecture</p>
+                <form id="likert" action="">
+                    <div class="radiogroup">
+                        <label class="rlabel" for="strdisagree">Strongly Disagree</label>
+                        <input type="radio" name="q1" value="StronglyDisagree">
+                    </div>
+                    <div class="radiogroup">
+                        <label class="rlabel" for="disagree">Disagree</label>
+                        <input type="radio" name="q1" value="Disagree">
+                    </div>
+                    <div class="radiogroup">
+                        <label class="rlabel" for="neutral">Neutral</label>
+                        <input type="radio" name="q1" value="Neutral">
+                    </div>
+                    <div class="radiogroup">
+                        <label class="rlabel" for="agree">Agree</label>
+                        <input type="radio" name="q1" value="Agree">
+                    </div>
+                    <div class="radiogroup">
+                        <label class="rlabel" for="stragree">Strongly Agree</label>
+                        <input type="radio" name="q1" value="StronglyAgree">
+                    </div>
+                </form>
             </div>
-            <button id="begin" class="animate__animated animate__fadeInUp"><strong>Begin<strong></button>
+            <button id="surveybutton" class="animate__animated animate__fadeInUp next"><strong>Next<strong></button>
         </div>
     </body>
 </html>

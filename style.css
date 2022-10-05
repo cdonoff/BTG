@@ -29,6 +29,12 @@ body {
     
 }
 
+input[type="text"], input[type="email"]{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    border: none;
+}
+
 header {
     grid-area: titt;
     width: max-content;
@@ -44,7 +50,7 @@ h1 {
 
 }
 
-#intro {
+#intro, #survey {
     grid-area: blurb;
     color: white;
     background-color: rgba(0, 0, 0, 0.15);
@@ -59,7 +65,7 @@ h1 {
 }
 
 .field {
-    width: 68vw;
+    width: 80vw;
     justify-self: center;
     text-align: center;
     align-items: flex-start;
@@ -68,8 +74,28 @@ h1 {
     padding-right: 0.7rem;
 }
 
+@media only screen and (min-width: 768px) {
+    .field {
+        width: 55vw;
+        justify-self: center;
+        text-align: center;
+        align-items: flex-start;
+        font-size: 1.5rem;
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
+    }
+
+}
+
 form {
     display: inline-block;
+    text-align: right;
+    margin-bottom: 1em;
+}
+
+#likert {
+    display: flex;
+    justify-content: space-around;
 }
 
 a {
@@ -78,6 +104,15 @@ a {
 
 label {
     font-size: 1rem;
+}
+
+.radiogroup {
+    display: inline-block;
+    text-align: center;
+}
+
+.radiogroup label {
+    display: block;
 }
 
 .next {
