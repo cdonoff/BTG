@@ -39,7 +39,7 @@ header {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     color: rgb(226, 166, 53);
 
 }
@@ -58,7 +58,7 @@ h1 {
     0 100px 80px rgba(0, 0, 0, 0.12);
 }
 
-p {
+.field {
     width: 68vw;
     justify-self: center;
     text-align: center;
@@ -68,15 +68,36 @@ p {
     padding-right: 0.7rem;
 }
 
-#begin {
-    width: 13vh;
-    height: 5vh;
+form {
+    display: inline-block;
+}
+
+a {
     grid-area: butter;
-    background-color: rgb(31, 168, 31);
+}
+
+label {
+    font-size: 1rem;
+}
+
+.next {
+    width: 6rem;
+    height: 3rem;
+    grid-area: butter;
+    background-color: rgba(22, 190, 22, 0.6);
     border: none;
     border-radius: 45px;
     box-shadow: 5px 5px 3px black;
     font-family: 'Quicksand', sans-serif;
-    margin-top: 11vh;
+    margin-top: 8vh;
+    font-size: 1rem;
     color: black;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.next:hover {
+    background-color: rgba(142, 218, 142, 0.6);
+    border: black;
+    text-decoration: none;
 }
