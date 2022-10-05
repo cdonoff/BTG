@@ -63,7 +63,7 @@ p {
     background-color: rgb(31, 168, 31);
     border: none;
     border-radius: 45px;
-    box-shadow: 5px 5px 3px;
+    box-shadow: 5px 5px 3px black;
     font-family: 'Quicksand', sans-serif;
     margin-top: 4vw;
     color: black;
