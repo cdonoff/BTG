@@ -57,7 +57,7 @@ p {
 }
 
 #begin {
-    width: 22vw;
+    width: 13vh;
     height: 5vh;
     grid-area: butter;
     background-color: rgb(31, 168, 31);
