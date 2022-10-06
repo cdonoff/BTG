@@ -34,10 +34,15 @@ body {
     
 }
 
-input[type="text"], input[type="email"]{
+input[type="text"], input[type="email"], #yearselector{
     font-family: 'Quicksand', sans-serif;
     font-size: 1rem;
     border: none;
+}
+
+input[type="radio"]{
+    margin-left: 9px;
+    margin-top: 4px;
 }
 
 header {
