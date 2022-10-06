@@ -66,6 +66,14 @@ h1 {
     0 100px 80px rgba(0, 0, 0, 0.12);
 }
 
+form {
+    display: inline-block;
+    text-align: right;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+
 .field {
     width: 80vw;
     justify-self: center;
@@ -74,7 +82,17 @@ h1 {
     font-size: 1.5rem;
     padding: 0.7rem;
 }
+#likert {
+    display: inline-block;
+}
+.radiogroup {
+    display: flex;
+    justify-content: space-between;
+}
 
+.radiogroup label {
+    display: block;
+}
 @media only screen and (min-width: 768px) {
     .field {
         width: 55vw;
@@ -86,18 +104,26 @@ h1 {
         padding-right: 0.7rem;
     }
 
+    #likert {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .radiogroup {
+        display: inline-block;
+        text-align: center;
+    }
+    
+    .radiogroup label {
+        display: block;
+        
+    }
+    .rlabel {
+        width: min-content;
+    }
+
 }
 
-form {
-    display: inline-block;
-    text-align: right;
-    margin-bottom: 1em;
-}
-
-#likert {
-    display: flex;
-    justify-content: space-around;
-}
 
 a {
     grid-area: butter;
@@ -107,14 +133,6 @@ label {
     font-size: 1rem;
 }
 
-.radiogroup {
-    display: inline-block;
-    text-align: center;
-}
-
-.radiogroup label {
-    display: block;
-}
 
 .next {
     width: 6rem;
