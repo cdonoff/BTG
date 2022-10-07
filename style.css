@@ -124,8 +124,8 @@ h1 {
 }
 
 .surveybutton {
-    width: 5rem;
-    height: 2rem;
+    width: 6rem;
+    height: 3rem;
     background-color: rgba(22, 190, 22, 0.6);
     border: none;
     border-radius: 45px;
@@ -209,8 +209,8 @@ h1 {
 @media only screen and (max-width: 233px) {
 
     .surveybutton {
-        width: 5rem;
-        height: 2rem;
+        width: 6rem;
+        height: 3rem;
         grid-area: butter;
         background-color: rgba(22, 190, 22, 0.6);
         border: none;
