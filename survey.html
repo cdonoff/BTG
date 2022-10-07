@@ -9,33 +9,33 @@
         <link rel="stylesheet" href="style.css">
         <title>Bridge The Gap</title>
     </head>
-    <body>
+    <body onload=surveyNav()>
         <div class="container">
             <header>
                 <h1 class="animate__animated animate__fadeInUp">Survey</h1>
             </header>
             <div id="survey" class="animate__animated animate__fadeInUp contents field">
-                <p class="question">My past experience gives me an advantage in this program</p>
+                <p id="question"></p>
                 <form id="likert" action="">
                     <div class="radiogroup">
                         <label class="rlabel" for="strdisagree">Strongly Disagree</label>
-                        <input type="radio" name="q1" value="StronglyDisagree">
+                        <input id="radio1" type="radio" name="radioq" value="StronglyDisagree">
                     </div>
                     <div class="radiogroup">
                         <label class="rlabel" for="disagree">Disagree</label>
-                        <input type="radio" name="q1" value="Disagree">
+                        <input id="radio2" type="radio" name="radioq" value="Disagree">
                     </div>
                     <div class="radiogroup">
                         <label class="rlabel" for="neutral">Neutral</label>
-                        <input type="radio" name="q1" value="Neutral">
+                        <input id="radio3" type="radio" name="radioq" value="Neutral">
                     </div>
                     <div class="radiogroup">
                         <label class="rlabel" for="agree">Agree</label>
-                        <input type="radio" name="q1" value="Agree">
+                        <input id="radio4" type="radio" name="radioq" value="Agree">
                     </div>
                     <div class="radiogroup">
                         <label class="rlabel" for="stragree">Strongly Agree</label>
-                        <input type="radio" name="q1" value="StronglyAgree">
+                        <input id="radio5" type="radio" name="radioq" value="StronglyAgree">
                     </div>
                 </form>
             </div>
@@ -44,5 +44,6 @@
                 <button id="next" class="animate__animated animate__fadeInUp surveybutton"><strong>Next<strong></button>
             </div>
         </div>
+        <script defer src="surv.js"></script>
     </body>
 </html>
