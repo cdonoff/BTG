@@ -34,3 +34,4 @@ form.addEventListener('submit', function() {
     localStorage.setItem('year', studentData.year);
 })
 
+
