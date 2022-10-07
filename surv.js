@@ -10,6 +10,12 @@ var question = document.getElementById('question');
 var backButton = document.getElementById('back');
 var nextButton = document.getElementById('next');
 
+var radio1 = document.getElementById("radio1")
+var radio2 = document.getElementById("radio2")
+var radio3 = document.getElementById("radio3")
+var radio4 = document.getElementById("radio4")
+var radio5 = document.getElementById("radio5")
+
 var surveyResponses = [
     "resp1",
     "resp2",
@@ -49,11 +55,11 @@ nextButton.addEventListener('click', function() {
         surveyResponses[page] = document.querySelector('input[name="radioq"]:checked').value;
         page++
         question.innerText = surveyQuestions[page];
-        document.getElementById("radio1").checked = false;
-        document.getElementById("radio2").checked = false;
-        document.getElementById("radio3").checked = false;
-        document.getElementById("radio4").checked = false;
-        document.getElementById("radio5").checked = false;
+        radio1.checked = false;
+        radio2.checked = false;
+        radio3.checked = false;
+        radio4.checked = false;
+        radio5.checked = false;
 
     } 
     
@@ -87,9 +93,9 @@ function surveyNav() {
 
     //Clear radio selections
 
-    document.getElementById("radio1").checked = false;
-    document.getElementById("radio2").checked = false;
-    document.getElementById("radio3").checked = false;
-    document.getElementById("radio4").checked = false;
-    document.getElementById("radio5").checked = false;
+    radio1.checked = false;
+    radio2.checked = false;
+    radio3.checked = false;
+    radio4.checked = false;
+    radio5.checked = false;
 }
