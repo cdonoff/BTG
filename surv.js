@@ -27,7 +27,8 @@ backButton.addEventListener('click', function() {
     
     } else if (page === 4) {
         page--
-        nextButton.innerText = "Next"
+        nextButton.innerHTML = "<strong>Next</strong>"
+        question.innerText = surveyQuestions[page];
         nextButton.classList.remove('finito')
     } else {
         page--
