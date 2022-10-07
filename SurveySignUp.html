@@ -14,26 +14,27 @@
             <header>
                 <h1 class="animate__animated animate__fadeInUp">Student Sign Up</h1>
             </header>
-            <div id="intro" class="animate__animated animate__fadeInUp field">
-                <p>Please enter the following information - thanks!</p>
-                <form action="">
-                    <label for="fname">First Name:</label>
-                    <input id="firstName" type="text" value="Enter First Name"><br>
-                    <label for="lname">Last Name:</label>
-                    <input id="lastName" type="text" value="Enter Last Name"><br>
-                    <label for="email">Email:</label>
-                    <input id="emailtext" type="email" name="" id="" value="youremail@gmail.com"><br>
-                    <label for="year">Program Year</label>
-                    <select id="yearselector" name="year">
-                        <option value="1">Year 1</option>
-                        <option value="2">Year 2</option>
-                    </select><br>
-                </form>
-            </div>
-            <a href="survey.html">
-                <button class="animate__animated animate__fadeInUp next"><strong>Continue<strong></button>
-            </a>
+            <form id="form" class="contents" action="survey.html">
+                <div class="animate__animated animate__fadeInUp field">
+                    <p>Please enter the following information</p>
+                    <div id="options">
+                        <label for="fname">First Name:</label>
+                        <input id="firstName" type="text" onfocus="this.value=''" placeholder="Enter First Name" required><br>
+                        <label for="lname">Last Name:</label>
+                        <input id="lastName" type="text" onfocus="this.value=''" placeholder="Enter Last Name" required><br>
+                        <label for="email">Email:</label>
+                        <input id="emailtext" type="email" onfocus="this.value=''" name="emailpart" placeholder="youremail@gmail.com" required><br>
+                        <label for="year">Program Year</label>
+                        <select id="yearselector" name="year" required>
+                            <option disabled selected value>Select Year</option>
+                            <option value="1">Year 1</option>
+                            <option value="2">Year 2</option>
+                        </select><br>
+                    </div>
+                </div>
+                <button id="continue" class="animate__animated animate__fadeInUp surveybutton"><strong>Continue</strong></button>              
+            </form>
         </div>
-        
+        <script defer src="script.js"></script>
     </body>
 </html>
